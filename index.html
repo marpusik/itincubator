@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <!-- Сюда подключаем стили -->
+    <link rel="stylesheet"
+          href="./css/normalize.css">
+    <link rel="stylesheet"
+          href="./css/index.css">
     <title>Document</title>
 </head>
-
 <body>
 <header class="header">
-    <div class="header-top">
-        <nav>
-            <ul>
-                <li><a href="">Shop</a></li>
+    <div class="header__top">
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a class="nav__link"
+                                              href="">Shop</a></li>
                 <li><a href="">Home</a></li>
                 <li><a href="">Story</a></li>
                 <li><a href="">About</a></li>
@@ -22,15 +24,19 @@
                 <li><a href="">Testimonials</a></li>
             </ul>
         </nav>
-        <a class="logo"
-           href="">
-            <img src=""
-                 alt="">
-        </a>
-        <div class="personal">
-            <ul>
-                <li>
-                    <a href=""><img src=""
+        <div class="header__logo logo">
+            <a class="logo__link"
+               href="">
+                <img class="logo__img"
+                     src=""
+                     alt="">
+            </a>
+        </div>
+        <div class="header__personal personal">
+            <ul class="personal__list">
+                <li class="personal__list-item">
+                    <a class="personal-link"
+                       href=""><img src=""
                                     alt=""></a>
                 </li>
                 <li>
@@ -40,14 +46,16 @@
                 <li>
                     <a href=""><img src=""
                                     alt=""></a>
-                    <span>3</span>
+                    <span class="personal__counter">3</span>
                 </li>
             </ul>
         </div>
-        <div class="social">
-            <ul>
-                <li>
-                    <a href=""><img src=""
+        <div class="header__social social">
+            <ul class="social__list">
+                <li class="social__list-item">
+                    <a class="social__link"
+                       href=""><img class="social__img"
+                                    src=""
                                     alt=""></a>
                 </li>
                 <li>
@@ -61,8 +69,8 @@
             </ul>
         </div>
     </div>
-    <div class="header-content">
-        <button>Shop now</button>
+    <div class="header__content">
+        <button class="header__btn btn btn--big">Shop now</button>
     </div>
 </header>
 <section class="smoothies">
@@ -178,12 +186,15 @@
     </div>
 </section>
 <footer class="footer">
-    <div class="footer-top">
-        <a class="logo"
-           href="">
-            <img src=""
-                 alt="">
-        </a>
+    <div class="footer__top">
+        <div class="footer__logo logo">
+            <a class="logo__link"
+               href="">
+                <img class="logo__img"
+                     src=""
+                     alt="">
+            </a>
+        </div>
         <div>
             <h3>Information</h3>
             <ul>
