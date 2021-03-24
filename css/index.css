@@ -47,7 +47,7 @@
     font-family: "Muli - Extra Bold", sans-serif;
     font-size: 24px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 20px;
     text-align: left;
     text-decoration: none;
     border-radius: 35px;
@@ -177,6 +177,7 @@
 
 .about__list {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .about__btn {
@@ -447,6 +448,7 @@
 
 .footer__list{
     list-style-type: none;
+    padding-left: 0;
     font-family: Muli, sans-serif;
     font-size: 18px;
     font-weight: bold;
