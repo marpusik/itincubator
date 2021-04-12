@@ -13,76 +13,82 @@
 <body>
 <header class="header">
     <div class="header__top">
-        <nav class="header__nav nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link"
-                                         href="">Home</a></li>
-                <li class="nav__item"><a class="nav__link"
-                                         href="">Shop</a></li>
-                <li class="nav__item"><a class="nav__link"
-                                         href="">Story</a></li>
-                <li class="nav__item"><a class="nav__link"
-                                         href="">About</a></li>
-                <li class="nav__item"><a class="nav__link"
-                                         href="">Blog</a></li>
-                <li class="nav__item"><a class="nav__link"
-                                         href="">Testimonials</a></li>
-            </ul>
-        </nav>
+        <div class="header__inner">
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link"
+                                             href="">Home</a></li>
+                    <li class="nav__item"><a class="nav__link"
+                                             href="">Shop</a></li>
+                    <li class="nav__item"><a class="nav__link"
+                                             href="">Story</a></li>
+                    <li class="nav__item"><a class="nav__link"
+                                             href="">About</a></li>
+                    <li class="nav__item"><a class="nav__link"
+                                             href="">Blog</a></li>
+                    <li class="nav__item"><a class="nav__link"
+                                             href="">Testimonials</a></li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <div class="header__personal personal">
+                    <ul class="personal__list">
+                        <li class="nav__item">
+                            <a class="personal-link"
+                               href="">
+                                <img class="personal-img"
+                                     src="assets/images/Search-icon.png"
+                                     alt=""></a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="personal-link"
+                               href="">
+                                <img class="personal-img"
+                                     src="assets/images/User-icon.png"
+                                     alt=""></a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="personal-link"
+                               href="">
+                                <img class="personal-img"
+                                     src="assets/images/Cart.png"
+                                     alt=""><span class="personal__counter">3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__social social">
+                    <ul class="social__list">
+                        <li class="nav__item">
+                            <a class="social__link"
+                               href=""><img class="social__img"
+                                            src="assets/images/Facebook.png"
+                                            alt=""></a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="social__link"
+                               href=""><img class="social__img"
+                                            src="assets/images/Pinterest.png"
+                                            alt=""></a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="social__link"
+                               href=""><img class="social__img"
+                                            src="assets/images/Instagram.png"
+                                            alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <a class="logo__link"
            href="">
             <img class="logo__img"
                  src="assets/images/Logo.png"
                  alt="">
         </a>
-        <div class="header__personal personal">
-            <ul class="personal__list">
-                <li class="nav__item">
-                    <a class="personal-link"
-                       href="">
-                        <img class="personal-img"
-                             src="assets/images/Search-icon.png"
-                             alt=""></a>
-                </li>
-                <li class="nav__item">
-                    <a class="personal-link"
-                       href="">
-                        <img class="personal-img"
-                             src="assets/images/User-icon.png"
-                             alt=""></a>
-                </li>
-                <li class="nav__item">
-                    <a class="personal-link"
-                       href="">
-                        <img class="personal-img"
-                             src="assets/images/Cart.png"
-                             alt=""><span class="personal__counter">3</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="header__social social">
-            <ul class="social__list">
-                <li class="nav__item">
-                    <a class="social__link"
-                       href=""><img class="social__img"
-                                    src="assets/images/Facebook.png"
-                                    alt=""></a>
-                </li>
-                <li class="nav__item">
-                    <a class="social__link"
-                       href=""><img class="social__img"
-                                    src="assets/images/Pinterest.png"
-                                    alt=""></a>
-                </li>
-                <li class="nav__item">
-                    <a class="social__link"
-                       href=""><img class="social__img"
-                                    src="assets/images/Instagram.png"
-                                    alt=""></a>
-                </li>
-            </ul>
-        </div>
+        <button class="header__burger"><img class="burger__icon" src="assets/images/meat.svg"
+                                            alt=""></button>
     </div>
     <div class="header__content">
         <button class="header__btn btn">Shop Now</button>
@@ -131,9 +137,11 @@
     </div>
 </section>
 <section class="about">
-    <img class="about__img"
-         src="assets/images/about.png"
-         alt="">
+    <div class="about__images">
+        <img class="about__img"
+             src="assets/images/about.png"
+             alt="">
+    </div>
     <div class="about__content">
         <h2 class="about__title title">What makes Smoothie an
             <span class="title__strong">awesome drink?</span></h2>
@@ -261,14 +269,12 @@
 </section>
 <footer class="footer">
     <div class="footer__top">
-        <div class="footer__logo logo">
-            <a class="logo__link"
+            <a class="footer__logo--link"
                href="">
-                <img class="logo__img"
+                <img class="footer__logo"
                      src="assets/images/Logo.png"
                      alt="">
             </a>
-        </div>
         <div class="footer__info">
             <h3 class="footer__title">Information</h3>
             <ul class="footer__list">
@@ -325,6 +331,8 @@
     </div>
     <div class="footer__bottom">
         <span class="footer__rights">© 2020. All Rights Reserved.</span>
+        <button class="footer__arrow--up"><img class="arrow__up" src="assets/images/go%20Top.png"
+                                            alt=""></button>
     </div>
 </footer>
 </body>
