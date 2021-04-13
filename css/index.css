@@ -763,6 +763,24 @@
 }
 
 @media (max-width: 576px) {
+
+    .footer__logo--link{
+        margin-left: 0;
+    }
+
+    .footer__email {
+        padding-right: 0;
+    }
+
+    .footer__pay {
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .recom__title{
+        display: grid;
+    }
+
     .blog__image {
         display: none;
     }
