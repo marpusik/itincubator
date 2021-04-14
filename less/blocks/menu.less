@@ -1,0 +1,24 @@
+// main: ./../main.less
+.nav{
+  &__link {
+    margin-right: 35px;
+    color: #ffffff;
+    font-family: 'MuliRegular', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }    
+  &__item {
+    list-style-type: none;
+    @media (max-width: 1270px){
+      margin: 0 0 15%;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    @media (max-width: 1270px) {
+      flex-direction: column;
+    }
+  }
+} 
