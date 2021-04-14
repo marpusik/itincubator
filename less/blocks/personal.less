@@ -1,25 +1,19 @@
 // main: ./../main.less
-
-.personal-link {
-  margin-right: 45px;
-  position: relative;
-}  
-
-.personal__list {
-  display: flex;
-}  
-
 .personal {
+  position: relative;
+  &-link {
+    margin-right: 45px;
     position: relative;
-  }
-
-.personal::after {
+  } 
+  &__list {
+    display: flex;
+  } 
+  &::after {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
   }
-
-.personal__counter {
+  &__counter {
     display: inline-block;
     height: 18px;
     width: 18px;
@@ -33,3 +27,4 @@
     line-height: 2;
     font-size: 10px;
   }
+}

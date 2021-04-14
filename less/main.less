@@ -1,46 +1,15 @@
  // out: ../dist/app.css, compress: true, sourceMap: false
 
-.smoothies {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 0;
-}
-
-.title {
-  font-family: Muli, sans-serif;
-  font-size: 50px;
-  font-weight: 800;
-  color: #f7ae3b;
+.products__btn::after, .story__btn::after, .recom::after, .recom__title::after, .view__detail::after, .footer__rights::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
 }
 
 .text {
   font-family: Muli, sans-serif;
   line-height: 2;
   color: #1e1e1e;
-}
-
-.smoothies__text {
-  display: flex;
-  max-width: 813px;
-  margin-top: 50px;
-  text-align: center;
-}
-
-.smoothies__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 100px;
-  max-width: 800px;
-  flex-basis: 30vh;
-  font-family: Muli, sans-serif;
-  text-align: center;
-  color: #f2612d;
-}
-
-.smoothies__column {
-  flex-basis: 25%;
 }
 
 .about {
@@ -642,10 +611,14 @@
   }
 }
 
-  @import "./blocks/header";
+ @import "./blocks/header";
  @import "./blocks/menu";
  @import "./blocks/logo";
  @import "./blocks/personal";
  @import "./blocks/social";
  @import "./blocks/btn";
+ @import "./blocks/smoothies";
+ @import "./blocks/title";
+
+
 
