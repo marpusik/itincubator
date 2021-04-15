@@ -1,0 +1,78 @@
+// main: ./../main.less
+.blog {
+  padding: 100px 0 200px;
+  @media (max-width: 576px) {
+    max-width: 95%;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 992px) {
+      display: grid;
+    }
+  }
+  &__image {
+    margin-top: 50px;
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+  &__article {
+    margin-top: 160px;
+  }
+  &__view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }  
+  &__img{
+    @media (max-width: 1270px) {
+      max-width: 90%;
+    }
+  }
+}
+.view{
+  &__title {
+    font-family: Muli, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #f2612d;
+    padding-top: 50px;
+    @media (max-width: 576px) {
+      text-align: center;
+    }
+  }
+  &__time {
+    padding: 20px 460px 40px 0;
+    font-family: Muli, sans-serif;
+    font-size: 16px;
+    color: #1e1e1e;
+    @media (max-width: 1270px) {
+    padding: 0;
+    }
+    @media (max-width: 576px) {
+      padding-right: 46%;
+    }
+  }
+  &__text {
+    max-width: 425px;
+  }  
+  &__detail {
+    position: relative;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+  }
+  &__detail::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 10px;
+    top: 6px;
+    right: -30px;
+    background-image: url(../assets/images/blog__description-arrow.png);
+  }
+}

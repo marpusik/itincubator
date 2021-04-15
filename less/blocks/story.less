@@ -1,0 +1,47 @@
+// main: ./../main.less
+.story {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  @media (max-width: 992px) {
+    display: block;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 150px;
+    @media (max-width: 1270px) {
+      align-items: center;
+    }
+  }
+  &__text {
+    margin-top: 40px;
+    max-width: 42vh;
+  }
+  &__btn {
+    margin-top: 50px;
+    position: relative;
+    width: 260px;
+    height: 70px;
+  }
+  &__btn::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    top: 25px;
+    right: 25px;
+    background-image: url(../assets/images/header__arrow.png);
+  }
+  &__img{
+    @media (max-width: 1270px) {
+      max-width: 60%;
+    }
+    @media (max-width: 992px) {
+      margin-top: 15%;
+    }
+  }
+}
+

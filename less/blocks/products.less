@@ -1,0 +1,54 @@
+// main: ./../main.less
+.products {
+  display: flex;
+  overflow: auto;
+  &__btn::after{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  &__column {
+    display: flex;
+    flex: 0 1 25%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+  }
+  &__title {
+    margin: 0;
+    padding-top: 30px;
+    font-family: Muli, sans-serif;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__text {
+    color: white;
+  }  
+  &__btn {
+    width: 180px;
+    height: 65px;
+    margin: 65px 0;
+    position: relative;
+    border: solid 2px #ffffff;
+    background: transparent;
+  }  
+  &__btn::after {
+    width: 30px;
+    height: 16px;
+    top: 25px;
+    right: 30px;
+    background-image: url("../assets/images/products__btn-arrow.png");
+  }
+}
+.chocolate {
+  background-color: #632b17;
+}
+.lettuce {
+  background-color: #178670;
+}
+.lemon {
+  background-color: #f7ae3b;
+}
+.turmeric {
+  background-color: #c3471b;
+}
