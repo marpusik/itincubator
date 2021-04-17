@@ -1,0 +1,30 @@
+// main: ./../main.less
+.smoothies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  &__text {
+    display: flex;
+    max-width: 813px;
+    margin-top: 50px;
+    text-align: center;
+  }  
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    max-width: 800px;
+    flex-basis: 30vh;
+    font-family: Muli, sans-serif;
+    text-align: center;
+    color: #f2612d;
+  }  
+  &__column {
+    flex-basis: 25%;
+    @media (max-width: 768px) {
+      flex-basis: 50%;
+    }
+  }
+}

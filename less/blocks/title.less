@@ -1,0 +1,22 @@
+// main: ./../main.less
+.title {
+  font-family: Muli, sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  color: #f7ae3b;
+  @media (max-width: 1270px) {
+    text-align: center;
+  }
+  &__strong::after{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    @media (max-width: 1500px) {
+    display: none;
+    }
+    @media (max-width: 576px) {
+      top: 51px;
+      max-width: 50vh;
+    }
+  }
+}
