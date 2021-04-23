@@ -2,11 +2,6 @@
 .products {
   display: flex;
   overflow: auto;
-  &__btn::after{
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-  }
   &__column {
     display: flex;
     flex: 0 1 25%;
@@ -31,15 +26,25 @@
     position: relative;
     border: solid 2px #ffffff;
     background: transparent;
+    transition: 1s;
+    transform: translate(0,0);
+    animation: btn 5s infinite;
   }  
   &__btn::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
     width: 30px;
     height: 16px;
     top: 25px;
     right: 30px;
     background-image: url("../assets/images/products__btn-arrow.png");
+    }  
   }
-}
+.products__btn:hover{
+    width: 250px;
+    height: 75px;
+    }
 .chocolate {
   background-color: #632b17;
 }
@@ -51,4 +56,10 @@
 }
 .turmeric {
   background-color: #c3471b;
+}
+@keyframes btn {
+  90%{
+    transform: translate(100px,0) rotate(180deg);
+  }
+  100%{}
 }
