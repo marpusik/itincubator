@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/normalize.css">
+    <link rel="stylesheet" href="./dist/WOW-master/css/libs/animate.css">
     <link rel="stylesheet" href="dist/app.css">
     <title>Organic</title>
 </head>
@@ -66,7 +67,7 @@
             <button class="header__burger"><img class="burger__icon" src="assets/images/meat.svg" alt=""></button>
         </div>
         <div class="header__content">
-            <button class="header__btn btn">Shop Now</button>
+            <button class="header__btn btn wow slideInRight">Shop Now</button>
         </div>
     </header>
     <section class="smoothies">
@@ -106,7 +107,7 @@
     </section>
     <section class="about">
         <div class="about__images">
-            <img class="about__img" src="assets/images/about.png" alt="">
+            <img class="about__img" data-tilt src="assets/images/about.png" alt="">
         </div>
         <div class="about__content">
             <h2 class="about__title title">What makes Smoothie an
@@ -124,7 +125,7 @@
                 <li class="about__item"><span class="about__item--strong">Gluten-Free & Grain-Free</span></li>
                 <li class="about__item"><span class="about__item--strong">Corn-Free & Soy-Free</span></li>
             </ul>
-            <button class="about__btn btn">About Organic Smoothie</button>
+            <button class="about__btn btn wow slideInRight">About Organic Smoothie</button>
         </div>
     </section>
     <section class="products">
@@ -259,6 +260,11 @@
             <button class="footer__arrow--up"><img class="arrow__up" src="assets/images/go%20Top.png" alt=""></button>
         </div>
     </footer>
+    <script src="./dist/WOW-master/dist/wow.min.js"></script>
+    <script src="./dist/vanilla-tilt.js-master/dist/vanilla-tilt.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
